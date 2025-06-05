@@ -10,7 +10,8 @@
 
   <!-- AOS Animation CDN -->
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -154,6 +155,377 @@
 
   </div>
 </section>
+<!-- Project Section -->
+<section id="projects" class="min-h-screen bg-black text-white px-6 py-20">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-16 border-b-2 inline-block border-blue-500 pb-2">💼 Projects</h2>
+
+    <div class="grid gap-12 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+
+      <!-- Project Card -->
+      <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-transform duration-300 aos-init" data-aos="fade-up">
+        <img src="./learnlynx.jpg" alt="LearnLynx" class="rounded-xl w-full mb-5 object-cover h-[200px]" />
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">LearnLynx - LMS Platform</h3>
+        <p class="text-gray-300 text-sm mb-4">A feature-rich learning platform with instructor dashboard, course purchase, and live class support.</p>
+        <div class="flex items-center space-x-[-10px] mt-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="React" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Node.js" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="MongoDB" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="TailwindCSS" />
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-transform duration-300 aos-init" data-aos="fade-up" data-aos-delay="100">
+        <img src="./examinate-2.png" alt="Examinate" class="rounded-xl w-full mb-5 object-cover h-[200px]" />
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">Examinate - Online Exam App</h3>
+        <p class="text-gray-300 text-sm mb-4">Online exam system with auto-evaluation, test creation, analytics, and student dashboard.</p>
+        <div class="flex items-center space-x-[-10px] mt-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Express" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="MongoDB" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="JavaScript" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Bootstrap" />
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-transform duration-300 aos-init" data-aos="fade-up" data-aos-delay="200">
+        <img src="./prerogative.jpg" alt="Prerogative E-Commerce" class="rounded-xl w-full mb-5 object-cover h-[200px]" />
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">Prerogative - E-Commerce</h3>
+        <p class="text-gray-300 text-sm mb-4">Scalable online store with custom cart, admin panel, and secure user authentication.</p>
+        <div class="flex items-center space-x-[-10px] mt-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="React" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Node.js" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="MySQL" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="HTML5" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="timeline" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-16 border-b-2 inline-block border-blue-500 pb-2" data-aos="fade-up">My Journey</h2>
+    
+    <div class="relative border-l-4 border-blue-500 ml-4">
+
+      <!-- Timeline Item -->
+      <div class="mb-12 ml-6 relative" data-aos="fade-right">
+        <div class="absolute -left-7 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-black"></div>
+        <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl shadow-xl neon-border max-w-lg hover:scale-[1.02] transition-all">
+          <h3 class="text-xl font-bold text-blue-400">2022</h3>
+          <p class="text-lg mt-1 font-semibold">Started Full Stack Development</p>
+          <p class="text-gray-300 mt-2">Began mastering the MERN stack and completed foundational projects to gain hands-on experience.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-12 ml-6 relative" data-aos="fade-left">
+        <div class="absolute -left-7 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-black"></div>
+        <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl shadow-xl neon-border max-w-lg ml-auto hover:scale-[1.02] transition-all">
+          <h3 class="text-xl font-bold text-blue-400">2023</h3>
+          <p class="text-lg mt-1 font-semibold">Trainer at Prerogative</p>
+          <p class="text-gray-300 mt-2">Taught over 100+ students Full Stack Web Development with live projects & guidance.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-12 ml-6 relative" data-aos="fade-right">
+        <div class="absolute -left-7 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-black"></div>
+        <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl shadow-xl neon-border max-w-lg hover:scale-[1.02] transition-all">
+          <h3 class="text-xl font-bold text-blue-400">2024</h3>
+          <p class="text-lg mt-1 font-semibold">Built LearnLynx LMS</p>
+          <p class="text-gray-300 mt-2">Designed and deployed a full Learning Management System with live classes, payments, and student tracking.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-0 ml-6 relative" data-aos="fade-left">
+        <div class="absolute -left-7 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-black"></div>
+        <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl shadow-xl neon-border max-w-lg ml-auto hover:scale-[1.02] transition-all">
+          <h3 class="text-xl font-bold text-blue-400">2025</h3>
+          <p class="text-lg mt-1 font-semibold">Exploring DevOps & AI</p>
+          <p class="text-gray-300 mt-2">Currently diving deep into DevOps tools, AI integration, and building smarter full-stack systems.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="bg-black text-white py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12 border-b-2 inline-block border-blue-500 pb-2">
+      💬 What People Say
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonial Card 1 -->
+      <div
+        class="bg-white/5 backdrop-blur-md rounded-xl p-6 text-left shadow-lg neon-border transition-transform transform hover:-translate-y-2"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <p class="text-gray-300 text-base italic mb-4">
+          "Love is an excellent mentor. His ability to simplify complex web development concepts helped me master full stack development faster than I expected!"
+        </p>
+        <div class="flex items-center gap-4">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="Student"
+            class="w-12 h-12 rounded-full border-2 border-blue-500"
+          />
+          <div>
+            <p class="text-white font-semibold">Rohan Sharma</p>
+            <p class="text-sm text-gray-400">Student @ Prerogative</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div
+        class="bg-white/5 backdrop-blur-md rounded-xl p-6 text-left shadow-lg neon-border transition-transform transform hover:-translate-y-2"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <p class="text-gray-300 text-base italic mb-4">
+          "Working with Love on the Examinate project was an incredible experience. He’s technically sound and always brings innovative ideas to the table."
+        </p>
+        <div class="flex items-center gap-4">
+          <img
+            src="https://randomuser.me/api/portraits/women/45.jpg"
+            alt="Teammate"
+            class="w-12 h-12 rounded-full border-2 border-blue-500"
+          />
+          <div>
+            <p class="text-white font-semibold">Anjali Gupta</p>
+            <p class="text-sm text-gray-400">Teammate @ Examinate</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card 3 -->
+      <div
+        class="bg-white/5 backdrop-blur-md rounded-xl p-6 text-left shadow-lg neon-border transition-transform transform hover:-translate-y-2"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <p class="text-gray-300 text-base italic mb-4">
+          "Love’s E-Commerce app was one of the most polished projects I’ve reviewed. His attention to UI/UX and performance was spot on!"
+        </p>
+        <div class="flex items-center gap-4">
+          <img
+            src="https://randomuser.me/api/portraits/men/12.jpg"
+            alt="Mentor"
+            class="w-12 h-12 rounded-full border-2 border-blue-500"
+          />
+          <div>
+            <p class="text-white font-semibold">Rahul Verma</p>
+            <p class="text-sm text-gray-400">Mentor @ Prerogative</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="relative py-24 px-6 bg-gradient-to-br from-black via-gray-900 to-black text-white">
+  <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">
+      Let's <span class="text-blue-500">Connect</span>
+    </h2>
+    <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+      “Let’s turn your vision into code.” Whether you have a project idea, want to collaborate, or just say hi —
+      I’m just a message away.
+    </p>
+  </div>
+
+  <div
+    class="max-w-4xl mx-auto bg-white/5 backdrop-blur-lg rounded-2xl shadow-2xl border border-blue-500/20 p-8 md:p-12"
+    data-aos="fade-up"
+    data-aos-delay="100"
+  >
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="col-span-1">
+        <label class="block text-sm font-medium text-white mb-2">Full Name</label>
+        <input
+          type="text"
+          placeholder="John Doe"
+          class="w-full p-4 bg-white/10 border border-transparent rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          required
+        />
+      </div>
+
+      <div class="col-span-1">
+        <label class="block text-sm font-medium text-white mb-2">Email</label>
+        <input
+          type="email"
+          placeholder="john@example.com"
+          class="w-full p-4 bg-white/10 border border-transparent rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          required
+        />
+      </div>
+
+      <div class="col-span-2">
+        <label class="block text-sm font-medium text-white mb-2">Subject</label>
+        <input
+          type="text"
+          placeholder="Project inquiry, Collaboration, Feedback..."
+          class="w-full p-4 bg-white/10 border border-transparent rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+        />
+      </div>
+
+      <div class="col-span-2">
+        <label class="block text-sm font-medium text-white mb-2">Message</label>
+        <textarea
+          rows="5"
+          placeholder="Write your message here..."
+          class="w-full p-4 bg-white/10 border border-transparent rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+          required
+        ></textarea>
+      </div>
+
+      <div class="col-span-2 text-center">
+        <button
+          type="submit"
+          class="mt-4 px-10 py-4 bg-blue-600 hover:bg-blue-700 transition text-white font-semibold rounded-full shadow-lg hover:shadow-blue-700/40 tracking-wide"
+        >
+          🚀 Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+<footer class="bg-gradient-to-t from-gray-900 via-black to-gray-900 text-gray-300 py-14 px-8 relative overflow-hidden">
+  <!-- Decorative gradient circles -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-blue-700 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob -translate-x-1/2 -translate-y-1/2"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-700 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 translate-x-1/2 translate-y-1/2"></div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Brand -->
+    <div class="space-y-4">
+      <h3 class="text-3xl font-extrabold text-blue-500 tracking-wide select-none cursor-default">Love Maluja</h3>
+      <p class="text-gray-400 max-w-xs">Crafting elegant digital experiences with code. Full stack developer passionate about building scalable web apps.</p>
+      <p class="text-sm text-gray-500 select-none">&copy; 2022 - 2025 All Rights Reserved</p>
+    </div>
+
+    <!-- Navigation -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4 text-white">Quick Links</h4>
+      <ul class="space-y-3 text-gray-400">
+        <li><a href="#hero" class="hover:text-blue-500 transition duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500 transition duration-300">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-500 transition duration-300">Projects</a></li>
+        <li><a href="#timeline" class="hover:text-blue-500 transition duration-300">Timeline</a></li>
+        <li><a href="#testimonials" class="hover:text-blue-500 transition duration-300">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-blue-500 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4 text-white">Get In Touch</h4>
+      <ul class="space-y-4 text-gray-400">
+        <li class="flex items-center space-x-3 hover:text-blue-500 transition cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18"></path></svg>
+          <a href="mailto:malujalove9@gmail.cokm" class="truncate">malujalove9@gmail.com</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-blue-500 transition cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10v6a2 2 0 01-2 2h-6m2-2l-3-3m0 0l-3 3m3-3v6"></path></svg>
+          <span>+91 98777-27858</span>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-blue-500 transition cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4l3-3"></path></svg>
+          <span>India, Remote</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4 text-white">Newsletter</h4>
+      <p class="text-gray-400 mb-4 max-w-sm">Subscribe for updates, projects & insights.</p>
+      <form class="flex space-x-3">
+        <input type="email" placeholder="Your email address" required
+          class="flex-grow rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 placeholder-gray-500 text-gray-200" />
+        <button type="submit"
+          class="bg-blue-600 hover:bg-blue-700 rounded-full px-6 py-2 text-white font-semibold transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Social & Back to Top -->
+  <div class="max-w-7xl mx-auto mt-12 flex justify-between items-center text-gray-400 text-lg">
+    <div class="flex space-x-6">
+      <!-- Social icons with hover glow -->
+      <a href="https://github.com/lovemaluja" target="_blank" aria-label="GitHub" class="hover:text-blue-500 transition duration-300 group relative">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.21 11.432c.6.11.82-.26.82-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.833 2.805 1.303 3.49.997.107-.775.42-1.304.763-1.604-2.665-.3-5.467-1.333-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.123-.3-.536-1.52.117-3.167 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.656 1.647.243 2.867.12 3.167.77.84 1.23 1.91 1.23 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.815 1.1.815 2.22v3.293c0 .32.21.69.825.572A12.005 12.005 0 0024 12c0-6.627-5.373-12-12-12z" />
+        </svg>
+        <span
+          class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity select-none">GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/lovemaluja" target="_blank" aria-label="LinkedIn" class="hover:text-blue-500 transition duration-300 group relative">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.023-3.04-1.852-3.04-1.852 0-2.135 1.446-2.135 2.94v5.67h-3.554V9h3.414v1.561h.05c.476-.9 1.637-1.85 3.368-1.85 3.602 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.067-.926-2.067-2.067 0-1.143.923-2.067 2.067-2.067 1.143 0 2.066.924 2.066 2.067 0 1.141-.923 2.067-2.066 2.067zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.22.792 24 1.771 24h20.451C23.2 24 24 23.22 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+        </svg>
+        <span
+          class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity select-none">LinkedIn</span>
+      </a>
+      <a href="mailto:lovemaluja@example.com" aria-label="Email" class="hover:text-blue-500 transition duration-300 group relative">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        <span
+          class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity select-none">Email</span>
+      </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      aria-label="Back to top"
+      class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition fixed right-8 bottom-8 md:relative md:right-auto md:bottom-auto md:shadow-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+  </div>
+</footer>
+
+<style>
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>
+
+
+<!-- AOS INIT -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<script>AOS.init();</script>
+
 
 <style>
   /* Neon Border */
@@ -164,6 +536,21 @@
       inset 0 0 6px rgba(59, 130, 246, 0.2);
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
   }
+  .neon-border:hover {
+    border-color: rgba(59, 130, 246, 1);
+    box-shadow:
+      0 0 18px rgba(59, 130, 246, 0.8),
+      0 0 30px rgba(59, 130, 246, 0.6),
+      inset 0 0 12px rgba(59, 130, 246, 0.5);
+  }
+  .neon-border {
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    box-shadow:
+      0 0 8px rgba(59, 130, 246, 0.3),
+      inset 0 0 6px rgba(59, 130, 246, 0.2);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
   .neon-border:hover {
     border-color: rgba(59, 130, 246, 1);
     box-shadow:
@@ -238,6 +625,7 @@
     glare: true,     // enable glare effect
     "max-glare": 0.3 // max glare opacity
   });
+
   </script>
 </body>
 </html>
