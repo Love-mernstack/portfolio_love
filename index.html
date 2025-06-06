@@ -572,11 +572,12 @@
     </div>
 
     <!-- Back to top -->
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-      class="mt-4 md:mt-0 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg transition">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M18 15l-6-6-6 6"/>
-      </svg>
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      aria-label="Back to top"
+      class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition fixed right-8 bottom-8 md:relative md:right-auto md:bottom-auto md:shadow-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
     </button>
   </div>
 </footer>
