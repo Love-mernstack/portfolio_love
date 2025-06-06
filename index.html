@@ -21,153 +21,227 @@
 <body class="bg-black text-white font-sans">
 
   <!-- ✅ Navbar -->
-  <nav class="w-full fixed top-0 left-0 z-50 bg-black bg-opacity-80 backdrop-blur-md shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-white">Love Maluja</h1>
-      <!-- Navbar UL -->
-<ul class="hidden md:flex gap-8 text-gray-300 font-medium">
-  <li class="relative group">
-    <a href="#home" class="hover:text-white transition">Home</a>
-    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-  </li>
-  <li class="relative group">
-    <a href="#about" class="hover:text-white transition">About</a>
-    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-  </li>
-  <li class="relative group">
-    <a href="#projects" class="hover:text-white transition">Projects</a>
-    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-  </li>
-  <li class="relative group">
-    <a href="#contact" class="hover:text-white transition">Contact</a>
-    <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-  </li>
-</ul>
+ <nav class="w-full fixed top-0 left-0 z-50 bg-black bg-opacity-80 backdrop-blur-md shadow-md overflow-x-hidden">
+  <div class="w-full max-w-7xl mx-auto px-4 py-4 flex justify-between items-center flex-wrap">
+    <!-- Logo -->
+    <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-white whitespace-nowrap">
+      Love Maluja
+    </h1>
 
-      <div class="md:hidden text-white text-2xl" id="menu-btn">&#9776;</div>
+    <!-- Mobile menu button -->
+    <div class="md:hidden text-white text-2xl cursor-pointer" id="menu-btn">
+      &#9776;
     </div>
-    <!-- Mobile Menu -->
-    <div class="md:hidden hidden px-4 pb-4 text-gray-300 space-y-2" id="mobile-menu">
-      <a href="#home" class="block hover:text-white">Home</a>
-      <a href="#about" class="block hover:text-white">About</a>
-      <a href="#projects" class="block hover:text-white">Projects</a>
-      <a href="#contact" class="block hover:text-white">Contact</a>
-    </div>
-  </nav>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-4 md:gap-8 text-gray-300 font-medium flex-wrap">
+      <li class="relative group">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+      </li>
+      <li class="relative group">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+      </li>
+      <li class="relative group">
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+      </li>
+      <li class="relative group">
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+        <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="md:hidden hidden px-4 pb-4 text-gray-300 space-y-2 bg-black bg-opacity-90 backdrop-blur-md"
+    id="mobile-menu"
+  >
+    <a href="#home" class="block py-2 hover:text-white">Home</a>
+    <a href="#about" class="block py-2 hover:text-white">About</a>
+    <a href="#projects" class="block py-2 hover:text-white">Projects</a>
+    <a href="#contact" class="block py-2 hover:text-white">Contact</a>
+  </div>
+</nav>
+
+
+
+
 
   <!-- ✅ Hero Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-32 md:pt-24" data-aos="fade-up">
-    <div class="text-center max-w-2xl">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">
-        Hi, I'm <span class="text-blue-500">Love Maluja</span>
-      </h1>
-      <p class="text-lg md:text-2xl text-gray-400 mb-6">
-        A passionate Full Stack Developer crafting modern web experiences.
-      </p>
-      <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition duration-300">
-        View My Work
-      </a>
-    </div>
-  </section>
+<section
+  id="home"
+  class="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 pt-24 md:pt-32"
+  data-aos="fade-up"
+>
+  <div class="text-center max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto px-4">
+    <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+      Hi, I'm <span class="text-blue-500">Love Maluja</span>
+    </h1>
+    <p class="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-400 mb-6 leading-relaxed max-w-xl mx-auto">
+      A passionate Full Stack Developer crafting modern web experiences.
+    </p>
+    <a
+      href="#projects"
+      class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition duration-300"
+    >
+      View My Work
+    </a>
+  </div>
+</section>
 
   <!-- About Section with Glassmorphism -->
 <!-- About Section -->
-<section id="about" class="min-h-screen bg-black text-white flex items-center px-6 py-20">
-  <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row gap-16">
-
+<section
+  id="about"
+  class="min-h-screen bg-black text-white flex items-center px-6 py-20"
+>
+  <div
+    class="max-w-7xl mx-auto w-full flex flex-col md:flex-row gap-12 md:gap-16"
+  >
     <!-- Left: Professional Intro Text with subtle fade-in -->
-    <div class="md:w-1/2 bg-white/5 backdrop-blur-lg rounded-2xl p-10 shadow-xl neon-border flex flex-col justify-center"
-         data-aos="fade-right" data-aos-duration="1000">
-      <h2 class="text-4xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-2">About Me</h2>
-      <p class="text-gray-300 text-lg leading-relaxed mb-6">
-        Hello! I’m <span class="text-white font-semibold">Love Maluja</span>, a dedicated <span class="text-blue-500 font-semibold">Full Stack Developer</span> with a passion for crafting efficient, scalable, and elegant web applications.
+    <div
+      class="md:w-1/2 bg-white/5 backdrop-blur-lg rounded-2xl p-8 sm:p-10 shadow-xl neon-border flex flex-col justify-center"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
+      <h2
+        class="text-3xl sm:text-4xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-2"
+      >
+        About Me
+      </h2>
+      <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
+        Hello! I’m <span class="text-white font-semibold">Love Maluja</span>,
+        a dedicated
+        <span class="text-blue-500 font-semibold">Full Stack Developer</span>
+        with a passion for crafting efficient, scalable, and elegant web
+        applications.
       </p>
-      <p class="text-gray-300 text-lg leading-relaxed mb-6">
-        With experience in JavaScript, React, Node.js, and modern backend technologies, I focus on building solutions that solve real-world problems and create excellent user experiences.
+      <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
+        With experience in JavaScript, React, Node.js, and modern backend
+        technologies, I focus on building solutions that solve real-world
+        problems and create excellent user experiences.
       </p>
-      <p class="text-gray-400 italic">"Turning ideas into high-quality code, one project at a time."</p>
+      <p class="text-gray-400 italic text-sm sm:text-base">
+        "Turning ideas into high-quality code, one project at a time."
+      </p>
 
-      <a href="/LoveMaluja-CV.pdf" download
-         class="mt-8 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold text-white shadow-lg transition-all w-max self-start">
+      <a
+        href="/LoveMaluja-CV.pdf"
+        download
+        class="mt-8 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold text-white shadow-lg transition-all w-max self-start"
+      >
         📄 Download CV
       </a>
     </div>
 
     <!-- Right: Skills with animated bars -->
-    <div class="md:w-1/2 bg-white/5 backdrop-blur-lg rounded-2xl p-10 shadow-xl neon-border"
-         data-aos="fade-left" data-aos-duration="1000">
-      <h3 class="text-3xl font-semibold mb-8">🛠️ Tech Skills</h3>
+    <div
+      class="md:w-1/2 bg-white/5 backdrop-blur-lg rounded-2xl p-8 sm:p-10 shadow-xl neon-border"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+    >
+      <h3 class="text-2xl sm:text-3xl font-semibold mb-8">🛠️ Tech Skills</h3>
       <div class="space-y-8">
-
         <!-- Skill Bar Template -->
         <div>
-          <div class="flex justify-between mb-2 font-semibold text-gray-300">
+          <div
+            class="flex justify-between mb-2 font-semibold text-gray-300 text-sm sm:text-base"
+          >
             <span>JavaScript</span>
             <span>90%</span>
           </div>
-          <div class="w-full bg-gray-700 rounded-full h-5">
-            <div class="bg-blue-500 h-5 rounded-full animate-skillbar-js" style="width: 0;"></div>
+          <div class="w-full bg-gray-700 rounded-full h-4 sm:h-5">
+            <div
+              class="bg-blue-500 h-4 sm:h-5 rounded-full animate-skillbar-js"
+              style="width: 0;"
+            ></div>
           </div>
         </div>
 
         <div>
-          <div class="flex justify-between mb-2 font-semibold text-gray-300">
+          <div
+            class="flex justify-between mb-2 font-semibold text-gray-300 text-sm sm:text-base"
+          >
             <span>React</span>
             <span>85%</span>
           </div>
-          <div class="w-full bg-gray-700 rounded-full h-5">
-            <div class="bg-blue-500 h-5 rounded-full animate-skillbar-react" style="width: 0;"></div>
+          <div class="w-full bg-gray-700 rounded-full h-4 sm:h-5">
+            <div
+              class="bg-blue-500 h-4 sm:h-5 rounded-full animate-skillbar-react"
+              style="width: 0;"
+            ></div>
           </div>
         </div>
 
         <div>
-          <div class="flex justify-between mb-2 font-semibold text-gray-300">
+          <div
+            class="flex justify-between mb-2 font-semibold text-gray-300 text-sm sm:text-base"
+          >
             <span>Node.js</span>
             <span>80%</span>
           </div>
-          <div class="w-full bg-gray-700 rounded-full h-5">
-            <div class="bg-blue-500 h-5 rounded-full animate-skillbar-node" style="width: 0;"></div>
+          <div class="w-full bg-gray-700 rounded-full h-4 sm:h-5">
+            <div
+              class="bg-blue-500 h-4 sm:h-5 rounded-full animate-skillbar-node"
+              style="width: 0;"
+            ></div>
           </div>
         </div>
 
         <div>
-          <div class="flex justify-between mb-2 font-semibold text-gray-300">
+          <div
+            class="flex justify-between mb-2 font-semibold text-gray-300 text-sm sm:text-base"
+          >
             <span>MongoDB</span>
             <span>75%</span>
           </div>
-          <div class="w-full bg-gray-700 rounded-full h-5">
-            <div class="bg-blue-500 h-5 rounded-full animate-skillbar-mongo" style="width: 0;"></div>
+          <div class="w-full bg-gray-700 rounded-full h-4 sm:h-5">
+            <div
+              class="bg-blue-500 h-4 sm:h-5 rounded-full animate-skillbar-mongo"
+              style="width: 0;"
+            ></div>
           </div>
         </div>
 
         <div>
-          <div class="flex justify-between mb-2 font-semibold text-gray-300">
+          <div
+            class="flex justify-between mb-2 font-semibold text-gray-300 text-sm sm:text-base"
+          >
             <span>Tailwind CSS</span>
             <span>85%</span>
           </div>
-          <div class="w-full bg-gray-700 rounded-full h-5">
-            <div class="bg-blue-500 h-5 rounded-full animate-skillbar-tailwind" style="width: 0;"></div>
+          <div class="w-full bg-gray-700 rounded-full h-4 sm:h-5">
+            <div
+              class="bg-blue-500 h-4 sm:h-5 rounded-full animate-skillbar-tailwind"
+              style="width: 0;"
+            ></div>
           </div>
         </div>
-
       </div>
     </div>
-
   </div>
 </section>
+
 <!-- Project Section -->
 <section id="projects" class="min-h-screen bg-black text-white px-6 py-20">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-4xl font-bold text-center mb-16 border-b-2 inline-block border-blue-500 pb-2">💼 Projects</h2>
 
-    <div class="grid gap-12 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+    <div class="grid gap-12 
+                grid-cols-1 
+                sm:grid-cols-1 
+                md:grid-cols-2 
+                lg:grid-cols-3">
 
       <!-- Project Card -->
       <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-transform duration-300 aos-init" data-aos="fade-up">
-        <img src="./learnlynx.jpg" alt="LearnLynx" class="rounded-xl w-full mb-5 object-cover h-[200px]" />
+        <img src="./learnlynx.jpg" alt="LearnLynx" class="rounded-xl w-full mb-5 object-cover h-[200px] sm:h-48 md:h-52 lg:h-56" />
         <h3 class="text-2xl font-semibold mb-2 text-blue-400">LearnLynx - LMS Platform</h3>
         <p class="text-gray-300 text-sm mb-4">A feature-rich learning platform with instructor dashboard, course purchase, and live class support.</p>
-        <div class="flex items-center space-x-[-10px] mt-4">
+        <div class="flex items-center space-x-[-10px] mt-4 flex-wrap gap-2">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="React" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Node.js" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="MongoDB" />
@@ -177,10 +251,10 @@
 
       <!-- Project Card -->
       <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-transform duration-300 aos-init" data-aos="fade-up" data-aos-delay="100">
-        <img src="./examinate-2.png" alt="Examinate" class="rounded-xl w-full mb-5 object-cover h-[200px]" />
+        <img src="./examinate-2.png" alt="Examinate" class="rounded-xl w-full mb-5 object-cover h-[200px] sm:h-48 md:h-52 lg:h-56" />
         <h3 class="text-2xl font-semibold mb-2 text-blue-400">Examinate - Online Exam App</h3>
         <p class="text-gray-300 text-sm mb-4">Online exam system with auto-evaluation, test creation, analytics, and student dashboard.</p>
-        <div class="flex items-center space-x-[-10px] mt-4">
+        <div class="flex items-center space-x-[-10px] mt-4 flex-wrap gap-2">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Express" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="MongoDB" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="JavaScript" />
@@ -190,10 +264,10 @@
 
       <!-- Project Card -->
       <div class="bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-transform duration-300 aos-init" data-aos="fade-up" data-aos-delay="200">
-        <img src="./prerogative.jpg" alt="Prerogative E-Commerce" class="rounded-xl w-full mb-5 object-cover h-[200px]" />
+        <img src="./prerogative.jpg" alt="Prerogative E-Commerce" class="rounded-xl w-full mb-5 object-cover h-[200px] sm:h-48 md:h-52 lg:h-56" />
         <h3 class="text-2xl font-semibold mb-2 text-blue-400">Prerogative - E-Commerce</h3>
         <p class="text-gray-300 text-sm mb-4">Scalable online store with custom cart, admin panel, and secure user authentication.</p>
-        <div class="flex items-center space-x-[-10px] mt-4">
+        <div class="flex items-center space-x-[-10px] mt-4 flex-wrap gap-2">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="React" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="Node.js" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-8 h-8 rounded-full border-2 border-white bg-white" alt="MySQL" />
@@ -204,6 +278,7 @@
     </div>
   </div>
 </section>
+
 <section id="timeline" class="bg-black text-white py-20 px-6">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-4xl font-bold text-center mb-16 border-b-2 inline-block border-blue-500 pb-2" data-aos="fade-up">My Journey</h2>
@@ -253,6 +328,7 @@
     </div>
   </div>
 </section>
+
 
 <section id="testimonials" class="bg-black text-white py-20 px-6">
   <div class="max-w-7xl mx-auto text-center">
@@ -538,6 +614,10 @@
 
 <style>
   /* Neon Border */
+  html, body {
+  overflow-x: hidden;
+}
+
   .neon-border {
     border: 1px solid rgba(59, 130, 246, 0.5);
     box-shadow:
@@ -552,22 +632,6 @@
       0 0 30px rgba(59, 130, 246, 0.6),
       inset 0 0 12px rgba(59, 130, 246, 0.5);
   }
-  .neon-border {
-    border: 1px solid rgba(59, 130, 246, 0.5);
-    box-shadow:
-      0 0 8px rgba(59, 130, 246, 0.3),
-      inset 0 0 6px rgba(59, 130, 246, 0.2);
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-
-  .neon-border:hover {
-    border-color: rgba(59, 130, 246, 1);
-    box-shadow:
-      0 0 18px rgba(59, 130, 246, 0.8),
-      0 0 30px rgba(59, 130, 246, 0.6),
-      inset 0 0 12px rgba(59, 130, 246, 0.5);
-  }
-
   /* Skill bar animations */
   @keyframes skillbar-js {
     from { width: 0; }
@@ -624,10 +688,12 @@
     AOS.init({ duration: 1000, once: true });
 
     // Mobile Menu Toggle
-    document.getElementById("menu-btn").addEventListener("click", () => {
-      const menu = document.getElementById("mobile-menu");
-      menu.classList.toggle("hidden");
-    });
+const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
       VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
     max: 15,         // max tilt rotation (degrees)
     speed: 400,      // speed of the enter/exit transition
@@ -687,6 +753,7 @@
 
     }
   });
+  
   </script>
 </body>
 </html>
